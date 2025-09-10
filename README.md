@@ -1,0 +1,1 @@
+# segunda_semana_talento_tech
