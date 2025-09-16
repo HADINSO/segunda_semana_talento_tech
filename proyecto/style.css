@@ -1,0 +1,58 @@
+/* Comentario: Esta es una regla CSS de ejemplo */
+selector {
+  propiedad: valor;
+}
+
+
+h1 {
+  color: green;
+  text-align: center;
+}
+p { color: blue; }
+
+/* Selectores en CSS */
+/* Por etiqueta: */
+p { color: blue; }
+
+/* Por clase (class): */
+.intro { font-size: 18px; }
+
+/* Por ID: */
+#titulo { color: red; } /* <h1 id="titulo">Título único</h1>*/
+
+/* Propiedades básicas */
+/* Colores: */
+h1 { color: red; }              /* nombre de color */
+p { color: #00ff00; }           /* hexadecimal */
+p { color: rgb(0, 0, 255); }    /* RGB */
+
+/* Texto: */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+/* Fondos: */
+body {
+  background-color: lightgray;
+  background-image: url("fondo.jpg");
+}
+
+/* Bordes: */
+div {
+  border: 2px solid black;
+  border-radius: 10px; /* esquinas redondeadas */
+}
+
+/* Márgenes y relleno: */
+div {
+  margin: 20px;  /* espacio externo */
+  padding: 15px; /* espacio interno */
+}
+
+/* Fondos: */
+
+
+/* Fondos: */

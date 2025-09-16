@@ -40,5 +40,37 @@ console.log(Object.values(datosPersonales))
 
 var nombre = prompt("Propocione su nombre: ")
 console.log(nombre)
-*/
+
 //Condicionales
+let numero = prompt("Proporcione un numero: ");
+
+if (numero > 0) {
+  console.log("El numero es positivo.");
+} else if (numero == 0) {
+  console.log("El numero es cero.");
+} else {
+  console.log("El numero es negativo.");
+}
+
+
+let nota = prompt("Digite su nota: ");
+
+if (nota < 60) {
+  console.log("Reprobado.");
+} else if (nota >= 60 && nota <= 79) {
+  console.log("Aprobado.");
+} else if (nota >= 80 && nota <= 89) {
+  console.log("Muy bien.");
+} else if (nota >= 90 && nota <= 100) {
+  console.log("Excelente.");
+} else {
+  console.log("Dato erroneo.");
+}
+*/
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`La tabla de numero:  ${i}`);
+  for (let tabla = 1; tabla <= 10; tabla++) {
+    console.log(`Numero: ${i} x ${tabla} = ${i * tabla}`);
+  }
+}

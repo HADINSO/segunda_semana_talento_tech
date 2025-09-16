@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datos Energía Renovable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Datos Históricos de Energía Renovable</h1>
+    <div class="mb-4">
+      <label for="csvFile" class="form-label">Cargar archivo CSV de datos:</label>
+      <input type="file" id="csvFile" accept=".csv" class="form-control" />
+    </div>
+    <!-- Tabla -->
+    <table class="table table-striped mt-4" id="energyTable">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Eólica (GWh)</th>
+          <th>Solar (GWh)</th>
+          <th>Hidroeléctrica (GWh)</th>
+          <th>Biofuel (GWh)</th>
+          <th>Geotérmica (GWh)</th>
+          <th>Consumo Total (GWh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Datos dinámicos -->
+      </tbody>
+    </table>
+
+    <!-- Formulario -->
+    <form id="energyForm" class="mt-5">
+      <h3>Estimación de porcentaje de energía renovable</h3>
+      <div class="mb-3">
+        <label for="userConsumption" class="form-label">Consumo eléctrico total (kWh):</label>
+        <input type="number" id="userConsumption" class="form-control" min="0" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="result" class="alert alert-info mt-3" style="display:none;"></div>
+
+    <nav class="mt-5">
+      <a href="index.html" class="btn btn-secondary me-3">Página Información</a>
+      <a href="dashboard.html" class="btn btn-success">Ver Dashboard</a>
+    </nav>
+  </div>
+  <!-- Scripts para CSV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <!-- hasta aqui -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<!-- !DOCTYPE html → Indica que usamos HTML5.
+    html lang="es" → Indica el idioma (español en este caso).
+    head → Información del documento (no visible al usuario).
+    meta charset="UTF-8" → Define la codificación de caracteres (permite ñ, tildes, etc.).
+    title → Título que se muestra en la pestaña del navegador.
+    body → Contenido visible para el usuario.
+-->
+
+<body>
+    <!-- Títulos -->
+    <h1>Título principal</h1>
+    <h2>Subtítulo</h2>
+    <h3>Encabezado nivel 3</h3>
+    <h6>Encabezado más pequeño</h6>
+
+    <!-- Párrafos y estilos -->
+    <p>Este es un párrafo.</p>
+    <b>Negrita</b> o <strong>Importante</strong>
+    <i>Cursiva</i> o <em>Énfasis</em>
+    <u>Subrayado</u>
+
+    <!-- Saltos de línea -->
+    <p>Texto con<br>salto de línea</p>
+
+    <!-- Listas -->
+    <!-- Lista no ordenada -->
+    <ul>
+        <li>Elemento de lista no ordenada 1</li>
+        <li>Elemento de lista no ordenada 2</li>
+    </ul>
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Elemento de lista ordenada 1</li>
+        <li>Elemento de lista ordenada 2</li>
+    </ol>
+    <!-- Lista de definición -->
+    <dl>
+        <dt>Término 1</dt>
+        <dd>Definición del término 1</dd>
+        <dt>Término 2</dt>
+        <dd>Definición del término 2</dd>
+    </dl>
+
+    <!-- Enlaces -->
+    <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    <!-- 
+    href → URL a la que apunta.
+    target="_blank" → Abre en una pestaña nueva.
+    title="Texto" → Texto emergente al pasar el ratón.
+    -->
+    <br>
+    <br>
+    <!-- Imágenes -->
+    <img src="imagen.jpg" alt="Descripción de la imagen" width="200" height="150">
+    <!-- 
+    src → ruta de la imagen.
+    alt → texto alternativo (accesibilidad, SEO).
+    width y height → tamaño de la imagen.
+    -->
+    <br>
+    <br>
+    <!-- Tablas -->
+    <table border="1">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+        </tr>
+        <tr>
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+        </tr>
+    </table>
+    <!-- 
+    table → tabla.
+    tr → fila.
+    th → encabezado de columna.
+    td → celda de datos.
+    -->
+    <br>
+    <br>
+    <!-- Formularios -->
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!--
+    form → inicio del formulario.
+    action → destino de los datos.
+    method="post/get" → forma de envío.
+    input → campo de entrada (texto, número, contraseña, etc.).
+    label → etiqueta descriptiva para el input.
+    -->
+    <br>
+    <br>
+    <!-- Divisiones y agrupación -->
+    <div class="contenedor">
+        <h2>Sección</h2>
+        <p>Texto dentro de un div.</p>
+    </div>
+    <!--
+    <div> → contenedor genérico (estructura).
+    class → permite aplicar estilos con CSS.
+    id → identificador único de un elemento.
+    -->
+    <br>
+    <br>
+    <!-- Botones -->
+    <button class="my-button">Click Me!</button>
+    <!--
+    button → botón interactivo. Puede contener texto o imágenes.
+    class → permite aplicar estilos con CSS.
+    -->
+</body>
+</html>
